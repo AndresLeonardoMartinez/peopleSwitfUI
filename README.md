@@ -1,2 +1,7 @@
 # peopleSwitfUI
-People App using SwiftUI
+People App use:
+- SwiftUI
+- Combine
+- Swift Packages
+
+API: randomuser.me
