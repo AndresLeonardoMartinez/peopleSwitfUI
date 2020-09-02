@@ -3,27 +3,44 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		52EB8E1824FD99250091FD58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB8E1724FD99250091FD58 /* AppDelegate.swift */; };
 		52EB8E1A24FD99250091FD58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB8E1924FD99250091FD58 /* SceneDelegate.swift */; };
-		52EB8E1C24FD99250091FD58 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB8E1B24FD99250091FD58 /* ContentView.swift */; };
+		52EB8E1C24FD99250091FD58 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB8E1B24FD99250091FD58 /* PeopleListView.swift */; };
 		52EB8E1E24FD99260091FD58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EB8E1D24FD99260091FD58 /* Assets.xcassets */; };
 		52EB8E2124FD99260091FD58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52EB8E2024FD99260091FD58 /* Preview Assets.xcassets */; };
 		52EB8E2424FD99260091FD58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52EB8E2224FD99260091FD58 /* LaunchScreen.storyboard */; };
+		52EB8E2D24FD99A00091FD58 /* PeopleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB8E2C24FD99A00091FD58 /* PeopleResponse.swift */; };
+		52EB8E3124FED4BA0091FD58 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB8E3024FED4BA0091FD58 /* PeopleViewModel.swift */; };
+		52EB8E3C24FEF16C0091FD58 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 52EB8E3B24FEF16C0091FD58 /* SDWebImageSwiftUI */; };
+		52EB8E3E24FEF7BA0091FD58 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB8E3D24FEF7BA0091FD58 /* Webservice.swift */; };
+		52EB8E4224FEFA470091FD58 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB8E4124FEFA470091FD58 /* PersonDetailsView.swift */; };
+		52F5ACAE250024F500AB32F3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACAD250024F500AB32F3 /* LoginView.swift */; };
+		52F5ACB025002A0800AB32F3 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACAF25002A0800AB32F3 /* AppRootView.swift */; };
+		52F5ACB225002ACF00AB32F3 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACB125002ACF00AB32F3 /* Auth.swift */; };
+		52F5ACB42500344300AB32F3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACB32500344300AB32F3 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52EB8E1424FD99250091FD58 /* PeopleSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EB8E1724FD99250091FD58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52EB8E1924FD99250091FD58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52EB8E1B24FD99250091FD58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		52EB8E1B24FD99250091FD58 /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
 		52EB8E1D24FD99260091FD58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52EB8E2024FD99260091FD58 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52EB8E2324FD99260091FD58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52EB8E2524FD99260091FD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52EB8E2C24FD99A00091FD58 /* PeopleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleResponse.swift; sourceTree = "<group>"; };
+		52EB8E3024FED4BA0091FD58 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		52EB8E3D24FEF7BA0091FD58 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		52EB8E4124FEFA470091FD58 /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
+		52F5ACAD250024F500AB32F3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		52F5ACAF25002A0800AB32F3 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		52F5ACB125002ACF00AB32F3 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		52F5ACB32500344300AB32F3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52EB8E3C24FEF16C0091FD58 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +58,7 @@
 		52EB8E0B24FD99250091FD58 = {
 			isa = PBXGroup;
 			children = (
+				52F5ACB125002ACF00AB32F3 /* Auth.swift */,
 				52EB8E1624FD99250091FD58 /* PeopleSwiftUI */,
 				52EB8E1524FD99250091FD58 /* Products */,
 			);
@@ -56,9 +75,13 @@
 		52EB8E1624FD99250091FD58 /* PeopleSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				52F5ACAC250024EB00AB32F3 /* login */,
+				52EB8E4024FEFA300091FD58 /* Details */,
+				52EB8E3F24FEF7F00091FD58 /* People */,
+				52EB8E2B24FD996C0091FD58 /* Networking */,
 				52EB8E1724FD99250091FD58 /* AppDelegate.swift */,
+				52F5ACAF25002A0800AB32F3 /* AppRootView.swift */,
 				52EB8E1924FD99250091FD58 /* SceneDelegate.swift */,
-				52EB8E1B24FD99250091FD58 /* ContentView.swift */,
 				52EB8E1D24FD99260091FD58 /* Assets.xcassets */,
 				52EB8E2224FD99260091FD58 /* LaunchScreen.storyboard */,
 				52EB8E2524FD99260091FD58 /* Info.plist */,
@@ -73,6 +96,41 @@
 				52EB8E2024FD99260091FD58 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		52EB8E2B24FD996C0091FD58 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				52EB8E2C24FD99A00091FD58 /* PeopleResponse.swift */,
+				52EB8E3D24FEF7BA0091FD58 /* Webservice.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		52EB8E3F24FEF7F00091FD58 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				52EB8E3024FED4BA0091FD58 /* PeopleViewModel.swift */,
+				52EB8E1B24FD99250091FD58 /* PeopleListView.swift */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		52EB8E4024FEFA300091FD58 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				52EB8E4124FEFA470091FD58 /* PersonDetailsView.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		52F5ACAC250024EB00AB32F3 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				52F5ACAD250024F500AB32F3 /* LoginView.swift */,
+				52F5ACB32500344300AB32F3 /* LoginViewModel.swift */,
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +149,9 @@
 			dependencies = (
 			);
 			name = PeopleSwiftUI;
+			packageProductDependencies = (
+				52EB8E3B24FEF16C0091FD58 /* SDWebImageSwiftUI */,
+			);
 			productName = PeopleSwiftUI;
 			productReference = 52EB8E1424FD99250091FD58 /* PeopleSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +180,9 @@
 				Base,
 			);
 			mainGroup = 52EB8E0B24FD99250091FD58;
+			packageReferences = (
+				52EB8E3A24FEF16C0091FD58 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 52EB8E1524FD99250091FD58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,8 +211,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EB8E1824FD99250091FD58 /* AppDelegate.swift in Sources */,
+				52EB8E3E24FEF7BA0091FD58 /* Webservice.swift in Sources */,
+				52F5ACB42500344300AB32F3 /* LoginViewModel.swift in Sources */,
+				52EB8E3124FED4BA0091FD58 /* PeopleViewModel.swift in Sources */,
+				52EB8E4224FEFA470091FD58 /* PersonDetailsView.swift in Sources */,
 				52EB8E1A24FD99250091FD58 /* SceneDelegate.swift in Sources */,
-				52EB8E1C24FD99250091FD58 /* ContentView.swift in Sources */,
+				52F5ACB225002ACF00AB32F3 /* Auth.swift in Sources */,
+				52EB8E1C24FD99250091FD58 /* PeopleListView.swift in Sources */,
+				52F5ACAE250024F500AB32F3 /* LoginView.swift in Sources */,
+				52F5ACB025002A0800AB32F3 /* AppRootView.swift in Sources */,
+				52EB8E2D24FD99A00091FD58 /* PeopleResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52EB8E3A24FEF16C0091FD58 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52EB8E3B24FEF16C0091FD58 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52EB8E3A24FEF16C0091FD58 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52EB8E0C24FD99250091FD58 /* Project object */;
 }
