@@ -58,7 +58,6 @@
 		52EB8E0B24FD99250091FD58 = {
 			isa = PBXGroup;
 			children = (
-				52F5ACB125002ACF00AB32F3 /* Auth.swift */,
 				52EB8E1624FD99250091FD58 /* PeopleSwiftUI */,
 				52EB8E1524FD99250091FD58 /* Products */,
 			);
@@ -81,6 +80,7 @@
 				52EB8E2B24FD996C0091FD58 /* Networking */,
 				52EB8E1724FD99250091FD58 /* AppDelegate.swift */,
 				52F5ACAF25002A0800AB32F3 /* AppRootView.swift */,
+				52F5ACB125002ACF00AB32F3 /* Auth.swift */,
 				52EB8E1924FD99250091FD58 /* SceneDelegate.swift */,
 				52EB8E1D24FD99260091FD58 /* Assets.xcassets */,
 				52EB8E2224FD99260091FD58 /* LaunchScreen.storyboard */,

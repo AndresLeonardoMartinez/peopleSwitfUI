@@ -14,7 +14,8 @@ class LoginViewModel: ObservableObject {
     @Published var successful = false
     
     func login(username: String, password: String) {
-    //go to api and back with a token
+        //WIP
+        //post to some api
         if username.uppercased() == "ANDRES" && password.uppercased() == "ANDRES123" {
             self.auth?.token = "123"
             self.successful = true
