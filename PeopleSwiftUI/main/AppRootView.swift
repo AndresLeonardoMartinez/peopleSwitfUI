@@ -9,16 +9,20 @@
 import SwiftUI
 
 struct AppRootView: View {
-
-    @EnvironmentObject var settings: Settings
+    
+    @EnvironmentObject var session: SessionStore
+    
+    func getUser() {
+        session.listen()
+    }
     
     var body: some View {
         Group {
-            if settings.auth.token == nil {
+            if session.session == nil {
                 LoginView()
             } else {
                 PeopleListView()
             }
-        }
+        }.onAppear(perform: getUser)
     }
 }

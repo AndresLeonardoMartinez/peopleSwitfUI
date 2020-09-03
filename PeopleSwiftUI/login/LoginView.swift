@@ -12,7 +12,7 @@ struct LoginView: View {
     @State private var isLoggin = false
     @State var username: String = ""
     @State var password: String = ""
-    @EnvironmentObject var settings: Settings
+    @EnvironmentObject var session: SessionStore
     @ObservedObject var viewModel = LoginViewModel()
     
     var body: some View {
@@ -32,7 +32,7 @@ struct LoginView: View {
                 
             }.padding(32)
             Button(action: {
-                self.viewModel.settings = self.settings
+                self.viewModel.session = self.session
                 self.viewModel.login(username: self.username, password: self.password)
             }) {
                 Text("Login")

@@ -12,7 +12,7 @@ import SDWebImageSwiftUI
 struct PeopleListView: View {
     
     @ObservedObject var viewModel = PeopleViewModel()
-    @EnvironmentObject var settings: Settings
+    @EnvironmentObject var session: SessionStore
     
     var body: some View {
         NavigationView {
@@ -26,7 +26,7 @@ struct PeopleListView: View {
                 }.navigationBarTitle("People")
                     .navigationBarItems(trailing:
                         Button("logout") {
-                            self.settings.removeToken()
+                            _ = self.session.signOut()
                         }
                 )
             }
