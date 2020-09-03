@@ -13,7 +13,6 @@ class PeopleViewModel: ObservableObject {
     
     @Published var dataSource: [Person] = []
     @Published var loading = true
-    var cancellable: AnyCancellable?
     
     init() {
         fetchPeople()

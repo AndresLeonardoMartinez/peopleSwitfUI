@@ -12,7 +12,7 @@ struct LoginView: View {
     @State private var isLoggin = false
     @State var username: String = ""
     @State var password: String = ""
-    @ObservedObject var auth: Auth
+    @EnvironmentObject var settings: Settings
     @ObservedObject var viewModel = LoginViewModel()
     
     var body: some View {
@@ -30,9 +30,9 @@ struct LoginView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 
-            }.padding()
+            }.padding(32)
             Button(action: {
-                self.viewModel.auth = self.auth
+                self.viewModel.settings = self.settings
                 self.viewModel.login(username: self.username, password: self.password)
             }) {
                 Text("Login")

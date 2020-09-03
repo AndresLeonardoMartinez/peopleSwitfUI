@@ -20,11 +20,18 @@
 		52EB8E4224FEFA470091FD58 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EB8E4124FEFA470091FD58 /* PersonDetailsView.swift */; };
 		52F5ACAE250024F500AB32F3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACAD250024F500AB32F3 /* LoginView.swift */; };
 		52F5ACB025002A0800AB32F3 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACAF25002A0800AB32F3 /* AppRootView.swift */; };
-		52F5ACB225002ACF00AB32F3 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACB125002ACF00AB32F3 /* Auth.swift */; };
+		52F5ACB225002ACF00AB32F3 /* AuthLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACB125002ACF00AB32F3 /* AuthLocal.swift */; };
 		52F5ACB42500344300AB32F3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACB32500344300AB32F3 /* LoginViewModel.swift */; };
+		52F5ACB7250127E600AB32F3 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACB6250127E600AB32F3 /* Settings.swift */; };
+		52F5ACB92501316200AB32F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52F5ACB82501316200AB32F3 /* GoogleService-Info.plist */; };
+		52F5ACBB25013D4000AB32F3 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACBA25013D4000AB32F3 /* SessionStore.swift */; };
+		52F5ACBD25013D6400AB32F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5ACBC25013D6400AB32F3 /* User.swift */; };
+		E69E7EB5A771B6687A6BC6AC /* Pods_PeopleSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1301B1AF7109DD1DAF6F5C63 /* Pods_PeopleSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F0E19E1618D0DB2D38F6E9C /* Pods-PeopleSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-PeopleSwiftUI/Pods-PeopleSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		1301B1AF7109DD1DAF6F5C63 /* Pods_PeopleSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PeopleSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EB8E1424FD99250091FD58 /* PeopleSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52EB8E1724FD99250091FD58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52EB8E1924FD99250091FD58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,8 +46,13 @@
 		52EB8E4124FEFA470091FD58 /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		52F5ACAD250024F500AB32F3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		52F5ACAF25002A0800AB32F3 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
-		52F5ACB125002ACF00AB32F3 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		52F5ACB125002ACF00AB32F3 /* AuthLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocal.swift; sourceTree = "<group>"; };
 		52F5ACB32500344300AB32F3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		52F5ACB6250127E600AB32F3 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		52F5ACB82501316200AB32F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		52F5ACBA25013D4000AB32F3 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		52F5ACBC25013D6400AB32F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B69179C1D887B13B85890714 /* Pods-PeopleSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeopleSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-PeopleSwiftUI/Pods-PeopleSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EB8E3C24FEF16C0091FD58 /* SDWebImageSwiftUI in Frameworks */,
+				E69E7EB5A771B6687A6BC6AC /* Pods_PeopleSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +73,8 @@
 			children = (
 				52EB8E1624FD99250091FD58 /* PeopleSwiftUI */,
 				52EB8E1524FD99250091FD58 /* Products */,
+				EAE073941D55E475B45CD3DA /* Pods */,
+				A1593D722A7AAAFEFD35780D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,16 +89,14 @@
 		52EB8E1624FD99250091FD58 /* PeopleSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				52F5ACB52501245700AB32F3 /* main */,
 				52F5ACAC250024EB00AB32F3 /* login */,
 				52EB8E4024FEFA300091FD58 /* Details */,
 				52EB8E3F24FEF7F00091FD58 /* People */,
 				52EB8E2B24FD996C0091FD58 /* Networking */,
-				52EB8E1724FD99250091FD58 /* AppDelegate.swift */,
-				52F5ACAF25002A0800AB32F3 /* AppRootView.swift */,
-				52F5ACB125002ACF00AB32F3 /* Auth.swift */,
-				52EB8E1924FD99250091FD58 /* SceneDelegate.swift */,
 				52EB8E1D24FD99260091FD58 /* Assets.xcassets */,
 				52EB8E2224FD99260091FD58 /* LaunchScreen.storyboard */,
+				52F5ACB82501316200AB32F3 /* GoogleService-Info.plist */,
 				52EB8E2524FD99260091FD58 /* Info.plist */,
 				52EB8E1F24FD99260091FD58 /* Preview Content */,
 			);
@@ -133,6 +146,37 @@
 			path = login;
 			sourceTree = "<group>";
 		};
+		52F5ACB52501245700AB32F3 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				52EB8E1724FD99250091FD58 /* AppDelegate.swift */,
+				52EB8E1924FD99250091FD58 /* SceneDelegate.swift */,
+				52F5ACBA25013D4000AB32F3 /* SessionStore.swift */,
+				52F5ACBC25013D6400AB32F3 /* User.swift */,
+				52F5ACAF25002A0800AB32F3 /* AppRootView.swift */,
+				52F5ACB125002ACF00AB32F3 /* AuthLocal.swift */,
+				52F5ACB6250127E600AB32F3 /* Settings.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		A1593D722A7AAAFEFD35780D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1301B1AF7109DD1DAF6F5C63 /* Pods_PeopleSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAE073941D55E475B45CD3DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B69179C1D887B13B85890714 /* Pods-PeopleSwiftUI.debug.xcconfig */,
+				0F0E19E1618D0DB2D38F6E9C /* Pods-PeopleSwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52EB8E2824FD99260091FD58 /* Build configuration list for PBXNativeTarget "PeopleSwiftUI" */;
 			buildPhases = (
+				29AB1D0CA06B3E3780C2A6A3 /* [CP] Check Pods Manifest.lock */,
 				52EB8E1024FD99250091FD58 /* Sources */,
 				52EB8E1124FD99250091FD58 /* Frameworks */,
 				52EB8E1224FD99250091FD58 /* Resources */,
+				6D020621872DBDE2590D9402 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -198,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52EB8E2424FD99260091FD58 /* LaunchScreen.storyboard in Resources */,
+				52F5ACB92501316200AB32F3 /* GoogleService-Info.plist in Resources */,
 				52EB8E2124FD99260091FD58 /* Preview Assets.xcassets in Resources */,
 				52EB8E1E24FD99260091FD58 /* Assets.xcassets in Resources */,
 			);
@@ -205,18 +252,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29AB1D0CA06B3E3780C2A6A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeopleSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D020621872DBDE2590D9402 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeopleSwiftUI/Pods-PeopleSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeopleSwiftUI/Pods-PeopleSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PeopleSwiftUI/Pods-PeopleSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52EB8E1024FD99250091FD58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F5ACBB25013D4000AB32F3 /* SessionStore.swift in Sources */,
 				52EB8E1824FD99250091FD58 /* AppDelegate.swift in Sources */,
 				52EB8E3E24FEF7BA0091FD58 /* Webservice.swift in Sources */,
 				52F5ACB42500344300AB32F3 /* LoginViewModel.swift in Sources */,
 				52EB8E3124FED4BA0091FD58 /* PeopleViewModel.swift in Sources */,
 				52EB8E4224FEFA470091FD58 /* PersonDetailsView.swift in Sources */,
+				52F5ACBD25013D6400AB32F3 /* User.swift in Sources */,
 				52EB8E1A24FD99250091FD58 /* SceneDelegate.swift in Sources */,
-				52F5ACB225002ACF00AB32F3 /* Auth.swift in Sources */,
+				52F5ACB7250127E600AB32F3 /* Settings.swift in Sources */,
+				52F5ACB225002ACF00AB32F3 /* AuthLocal.swift in Sources */,
 				52EB8E1C24FD99250091FD58 /* PeopleListView.swift in Sources */,
 				52F5ACAE250024F500AB32F3 /* LoginView.swift in Sources */,
 				52F5ACB025002A0800AB32F3 /* AppRootView.swift in Sources */,
@@ -354,6 +446,7 @@
 		};
 		52EB8E2924FD99260091FD58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B69179C1D887B13B85890714 /* Pods-PeopleSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,6 +466,7 @@
 		};
 		52EB8E2A24FD99260091FD58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F0E19E1618D0DB2D38F6E9C /* Pods-PeopleSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

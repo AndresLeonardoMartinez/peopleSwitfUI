@@ -10,14 +10,16 @@ import Combine
 
 class LoginViewModel: ObservableObject {
     
-    @Published var auth: Auth? = nil
+    @Published var settings: Settings? = nil
     @Published var successful = false
     
     func login(username: String, password: String) {
         //WIP
         //post to some api
         if username.uppercased() == "ANDRES" && password.uppercased() == "ANDRES123" {
-            self.auth?.token = "123"
+            let token = "token"
+            self.settings?.auth.token = token
+            self.settings?.saveToken(token)
             self.successful = true
         } else {
             self.successful = false

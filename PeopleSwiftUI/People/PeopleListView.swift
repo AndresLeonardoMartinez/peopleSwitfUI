@@ -12,7 +12,7 @@ import SDWebImageSwiftUI
 struct PeopleListView: View {
     
     @ObservedObject var viewModel = PeopleViewModel()
-    @ObservedObject var auth: Auth
+    @EnvironmentObject var settings: Settings
     
     var body: some View {
         NavigationView {
@@ -24,10 +24,10 @@ struct PeopleListView: View {
                         PersonCell(person: person)
                     }
                 }.navigationBarTitle("People")
-                .navigationBarItems(trailing:
-                    Button("logout") {
-                        self.auth.token = nil
-                    }
+                    .navigationBarItems(trailing:
+                        Button("logout") {
+                            self.settings.removeToken()
+                        }
                 )
             }
         }
