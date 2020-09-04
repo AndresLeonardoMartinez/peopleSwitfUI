@@ -7,13 +7,24 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct LoginView: View {
     @State private var isLoggin = false
     @State var username: String = ""
     @State var password: String = ""
-    @EnvironmentObject var session: SessionStore
-    @ObservedObject var viewModel = LoginViewModel()
+    @State var error: Error? = nil
+    @State var loading = false
+    @EnvironmentObject var session: SessionStore    
+    
+    func login() {
+        self.loading = true
+        self.error = nil
+        session.signIn(email: self.username, password: self.password) { (result, error) in
+            self.error = error
+            self.loading = false
+        }
+    }
     
     var body: some View {
         VStack {
@@ -30,10 +41,14 @@ struct LoginView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 
                 
+                
             }.padding(32)
+            if error != nil {
+                Text("ops... There was an error").foregroundColor(.red)
+            }
+            ActivityIndicator(self.$loading)
             Button(action: {
-                self.viewModel.session = self.session
-                self.viewModel.login(username: self.username, password: self.password)
+                self.login()
             }) {
                 Text("Login")
             }
